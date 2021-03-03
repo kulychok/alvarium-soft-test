@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/alvarium-soft-test/static/css/main.e6c8e5ac.chunk.css",
+    "main.js": "/alvarium-soft-test/static/js/main.895472dd.chunk.js",
+    "main.js.map": "/alvarium-soft-test/static/js/main.895472dd.chunk.js.map",
+    "runtime-main.js": "/alvarium-soft-test/static/js/runtime-main.8d862065.js",
+    "runtime-main.js.map": "/alvarium-soft-test/static/js/runtime-main.8d862065.js.map",
+    "static/css/2.2f9ba80b.chunk.css": "/alvarium-soft-test/static/css/2.2f9ba80b.chunk.css",
+    "static/js/2.0a81141a.chunk.js": "/alvarium-soft-test/static/js/2.0a81141a.chunk.js",
+    "static/js/2.0a81141a.chunk.js.map": "/alvarium-soft-test/static/js/2.0a81141a.chunk.js.map",
+    "static/js/3.4d06cf90.chunk.js": "/alvarium-soft-test/static/js/3.4d06cf90.chunk.js",
+    "static/js/3.4d06cf90.chunk.js.map": "/alvarium-soft-test/static/js/3.4d06cf90.chunk.js.map",
+    "index.html": "/alvarium-soft-test/index.html",
+    "static/css/2.2f9ba80b.chunk.css.map": "/alvarium-soft-test/static/css/2.2f9ba80b.chunk.css.map",
+    "static/css/main.e6c8e5ac.chunk.css.map": "/alvarium-soft-test/static/css/main.e6c8e5ac.chunk.css.map",
+    "static/js/2.0a81141a.chunk.js.LICENSE.txt": "/alvarium-soft-test/static/js/2.0a81141a.chunk.js.LICENSE.txt",
+    "static/media/1.5fbbedd5.jpg": "/alvarium-soft-test/static/media/1.5fbbedd5.jpg",
+    "static/media/10.fa8fb071.jpg": "/alvarium-soft-test/static/media/10.fa8fb071.jpg",
+    "static/media/2.a7c6a9b0.jpg": "/alvarium-soft-test/static/media/2.a7c6a9b0.jpg",
+    "static/media/3.8661ee75.jpg": "/alvarium-soft-test/static/media/3.8661ee75.jpg",
+    "static/media/4.a741bbb6.jpg": "/alvarium-soft-test/static/media/4.a741bbb6.jpg",
+    "static/media/5.e2709996.jpg": "/alvarium-soft-test/static/media/5.e2709996.jpg",
+    "static/media/6.e7c79162.jpg": "/alvarium-soft-test/static/media/6.e7c79162.jpg",
+    "static/media/7.0deb21a2.jpg": "/alvarium-soft-test/static/media/7.0deb21a2.jpg",
+    "static/media/8.f5d96d93.jpg": "/alvarium-soft-test/static/media/8.f5d96d93.jpg",
+    "static/media/9.c50c4170.jpg": "/alvarium-soft-test/static/media/9.c50c4170.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d862065.js",
+    "static/css/2.2f9ba80b.chunk.css",
+    "static/js/2.0a81141a.chunk.js",
+    "static/css/main.e6c8e5ac.chunk.css",
+    "static/js/main.895472dd.chunk.js"
+  ]
+}

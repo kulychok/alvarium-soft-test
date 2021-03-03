@@ -1,0 +1,61 @@
+.addProduct {
+	width: 100vw;
+	padding: 1vw 15vw 1vw 15vw;
+	display: grid;
+	grid-template-areas:
+		'name description'
+		'price description'
+		'img some'
+		'save save';
+	grid-gap: 1vw;
+	border-top: 1px solid grey;
+	font-size: 1.3vw;
+}
+
+.addProduct div input {
+	height: 75%;
+}
+
+.addProduct button {
+	width: 10vw;
+	grid-area: save;
+	justify-self: flex-end;
+}
+
+.addProduct-name {
+	grid-area: name;
+	display: flex;
+	justify-content: space-around;
+}
+
+.addProduct-description {
+	grid-area: description;
+}
+
+.addProduct-img {
+	grid-area: img;
+	display: flex;
+	justify-content: space-around;
+}
+
+.addProduct-price {
+	grid-area: price;
+	display: flex;
+	justify-content: space-around;
+}
+
+.addProduct-price input {
+	width: 20vw;
+}
+
+.addProduct-name input {
+	width: 20vw;
+}
+
+.addProduct-img input {
+	width: 15vw;
+}
+
+.addProduct-description textarea {
+	height: 90% !important;
+}

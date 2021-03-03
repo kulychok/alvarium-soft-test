@@ -1,0 +1,9 @@
+.filter-currency {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr, 1fr;
+}
+
+.filter-currency div input {
+	margin: 1vh;
+}

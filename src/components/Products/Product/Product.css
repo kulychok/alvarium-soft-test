@@ -1,0 +1,35 @@
+.product {
+	width: 20vw;
+	height: 25vh;
+	display: grid;
+	grid-template-areas:
+		'img name'
+		'img price'
+		'img description';
+	padding: 1vh 1vw 1vh 0;
+	margin: 1vh 0 1vh 1vw;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+.product img {
+	grid-area: img;
+
+	height: 20vh;
+	justify-self: center;
+	align-self: center;
+}
+
+.product h2 {
+	grid-area: name;
+}
+
+.productPrice {
+	grid-area: price;
+	font-size: 2vh;
+}
+
+.productDescription {
+	grid-area: description;
+	font-size: 2vh;
+}

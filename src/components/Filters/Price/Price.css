@@ -1,0 +1,16 @@
+.filter-price {
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		'price price'
+		'from to'
+		'fromField toField';
+}
+
+.filter-price h3 {
+	grid-area: price;
+}
+
+.filter-price input {
+	width: 10vw;
+}

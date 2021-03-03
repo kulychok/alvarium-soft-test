@@ -4,7 +4,7 @@ import Currency from './Currency';
 
 const mapStateToProps = (state) => {
 	return {
-		currency: state.filtersComponent.currentCurrency,
+		currency: state.data.currentCurrency,
 	};
 };
 

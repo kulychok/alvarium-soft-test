@@ -4,7 +4,7 @@ import Sorting from './Sorting';
 
 const mapStateToProps = (state) => {
 	return {
-		currency: state.filtersComponent.currentCurrency,
+		sortingMethod: state.data.sortingMethod,
 	};
 };
 

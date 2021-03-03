@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
 	return {
-		price: state.filtersComponent.currentPrice,
+		price: state.data.currentPrice,
 	};
 };
 

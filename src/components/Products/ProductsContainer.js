@@ -4,8 +4,8 @@ import './Products.css';
 
 const mapStateToProps = (state) => {
 	return {
-		products: state.productsComponent.products.products,
-		currency: state.filtersComponent.currentCurrency,
+		products: state.data.products.products,
+		currency: state.data.currentCurrency,
 	};
 };
 

@@ -10,10 +10,10 @@ function Sorting(props) {
 					id='sortPriceUp'
 					className='form-check-input'
 					checked={((v) => (v === 'sortPriceUp' ? 'checked' : ''))(
-						props.currency
+						props.sortingMethod
 					)}
 					onChange={() =>
-						props.chooseCurrency('sortPriceUp')
+						props.chooseFilterMethod('sortPriceUp')
 					}></input>
 				<label htmlFor='sortPriceUp'>по возрастанию цены</label>
 			</div>
@@ -23,10 +23,10 @@ function Sorting(props) {
 					id='sortPriceDown'
 					className='form-check-input'
 					checked={((v) => (v === 'sortPriceDown' ? 'checked' : ''))(
-						props.currency
+						props.sortingMethod
 					)}
 					onChange={() =>
-						props.chooseCurrency('sortPriceDown')
+						props.chooseFilterMethod('sortPriceDown')
 					}></input>
 				<label htmlFor='sortPriceDown'>по убыванию цены</label>
 			</div>
@@ -36,10 +36,10 @@ function Sorting(props) {
 					id='sortAlphabet'
 					className='form-check-input'
 					checked={((v) => (v === 'sortAlphabet' ? 'checked' : ''))(
-						props.currency
+						props.sortingMethod
 					)}
 					onChange={() =>
-						props.chooseCurrency('sortAlphabet')
+						props.chooseFilterMethod('sortAlphabet')
 					}></input>
 				<label htmlFor='sortAlphabet'>по алфавиту</label>
 			</div>

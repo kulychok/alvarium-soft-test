@@ -25,6 +25,7 @@ products.products.sort((a, b) => a.price - b.price);
 
 const initialState = {
 	products,
+	filteredProducts: [],
 	newProduct: {
 		name: '',
 		price: 0,

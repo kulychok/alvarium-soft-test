@@ -1,14 +1,14 @@
-import Currency from './Currency/Currency';
-import Price from './Price/Price';
-import Sorting from './Sorting/Sorting';
+import PriceContainer from './Price/PriceContainer';
 import './Filters.css';
+import CurrencyContainer from './Currency/CurrencyContainer';
+import SortingContainer from './Sorting/SortingContainer';
 
 function Filters() {
 	return (
 		<div className='filters'>
-			<Price />
-			<Currency />
-			<Sorting />
+			<PriceContainer />
+			<CurrencyContainer />
+			<SortingContainer />
 		</div>
 	);
 }

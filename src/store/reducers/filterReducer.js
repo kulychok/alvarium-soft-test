@@ -1,30 +1,31 @@
-const EDIT_PRICE = 'EDIT-PRICE';
+const UPDATE_PRICE = 'UPDATE-PRICE';
 const CHOOSE_CURRENCY = 'CHOOSE-CURRENCY';
 const CHOOSE_SORTING_METHOD = 'CHOOSE-FILTER-METHOD';
 
 const initialState = {
-	currentPrice: { min: 0, max: 0 },
-	currentCurrency: 'USD',
+	currentPrice: { min: '', max: '' },
+	currentCurrency: 'UAH',
 	sortingMethod: 'byPriceUp',
 };
 
 export const filterReducer = (state = initialState, action) => {
+	const stateCopy = { ...state, currentPrice: { ...state.currentPrice } };
 	switch (action.type) {
-		case EDIT_PRICE:
+		case UPDATE_PRICE:
 			{
-				state.currentPrice = { min: action.min, max: action.max };
+				stateCopy.currentPrice = { min: action.min, max: action.max };
 			}
 			break;
 		case CHOOSE_CURRENCY:
 			{
-				state.currentCurrency = action.currency;
+				stateCopy.currentCurrency = action.currency;
 			}
 			break;
 		case CHOOSE_SORTING_METHOD:
 			{
-				state.sortingMethod = action.sortingMethod;
+				stateCopy.sortingMethod = action.sortingMethod;
 			}
 			break;
 	}
-	return state;
+	return stateCopy;
 };

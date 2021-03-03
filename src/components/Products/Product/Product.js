@@ -5,7 +5,9 @@ function Product(props) {
 		<div className='product'>
 			<img src={props.img} alt={props.name}></img>
 			<h2>{props.name}</h2>
-			<div className='productPrice'>{props.price + ' UAH'}</div>
+			<div className='productPrice'>
+				{props.price + ' ' + props.currency}
+			</div>
 			<div className='productDescription'>{props.description}</div>
 		</div>
 	);

@@ -1,10 +1,10 @@
-const EDIT_PRICE = 'EDIT-PRICE';
+const UPDATE_PRICE = 'UPDATE-PRICE';
 const CHOOSE_CURRENCY = 'CHOOSE-CURRENCY';
 const CHOOSE_SORTING_METHOD = 'CHOOSE-FILTER-METHOD';
 const ADD_PRODUCT = 'ADD-PRODUCT';
 
-export const editPrice = (min, max) => {
-	return { type: EDIT_PRICE, min: min, max: max };
+export const updatePrice = (min = 0, max = 0) => {
+	return { type: UPDATE_PRICE, min: min, max: max };
 };
 
 export const chooseCurrency = (currency) => {

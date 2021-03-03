@@ -1,5 +1,4 @@
 import './App.css';
-
 import AddProduct from './components/AddProduct/AddProduct';
 import Filters from './components/Filters/Filters';
 import ProductsContainer from './components/Products/ProductsContainer';

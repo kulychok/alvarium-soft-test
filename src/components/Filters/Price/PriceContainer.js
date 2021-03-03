@@ -1,11 +1,21 @@
 import Price from './Price';
+import { updatePrice } from '../../../store/actionCreators';
+import { connect } from 'react-redux';
 
-const f1 = () => {
-	return {};
+const mapStateToProps = (state) => {
+	return {
+		price: state.filtersComponent.currentPrice,
+	};
 };
 
-const f2 = () => {
-	return {};
+const mapDispatchToProps = (dispatch) => {
+	return {
+		updatePrice: (min, max) => {
+			dispatch(updatePrice(min, max));
+		},
+	};
 };
 
-const PriceContainer = connect(f1, f2)(Price);
+const PriceContainer = connect(mapStateToProps, mapDispatchToProps)(Price);
+
+export default PriceContainer;

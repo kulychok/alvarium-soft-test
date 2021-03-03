@@ -1,35 +1,45 @@
 .product {
-	width: 20vw;
-	height: 25vh;
+	width: 23vw;
+	height: 40vh;
 	display: grid;
 	grid-template-areas:
 		'img name'
 		'img price'
 		'img description';
-	padding: 1vh 1vw 1vh 0;
+	padding: 1vh 1vw 1vh 1vw;
 	margin: 1vh 0 1vh 1vw;
-	border: 1px solid grey;
+	box-shadow: 3px 2px 2px rgb(184, 181, 181);
 	border-radius: 10px;
+	background-color: #fff;
 }
 
 .product img {
 	grid-area: img;
+	max-width: 10vw;
+	max-height: 35vh;
 
-	height: 20vh;
 	justify-self: center;
 	align-self: center;
+
+	margin-right: 1vw;
 }
 
 .product h2 {
 	grid-area: name;
+	font-size: 1.3vw;
+	margin: 4vh 0;
 }
 
 .productPrice {
 	grid-area: price;
-	font-size: 2vh;
+	font-size: 1.2vw;
+	font-weight: bold;
+	margin: 1vh 0 2vh 0;
 }
 
 .productDescription {
 	grid-area: description;
 	font-size: 2vh;
+	overflow: hidden;
+	margin-bottom: 1vh;
 }

@@ -1,16 +1,17 @@
 import Product from './Product/Product';
-import photo1 from '../../store/products/1.jpg';
 import './Products.css';
 
-function Products() {
+function Products(props) {
 	return (
 		<div className='products'>
-			<Product
-				name={'Iphone'}
-				price={1000}
-				img={photo1}
-				description={'dfdsf'}
-			/>
+			{props.products.map((el) => (
+				<Product
+					name={el.name}
+					price={el.price}
+					img={el.img}
+					description={el.description}
+				/>
+			))}
 		</div>
 	);
 }

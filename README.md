@@ -1,4 +1,4 @@
-[Template online-shop on React + Redux](https://kulychok.github.io/alvarium-soft-test/).
+# [Template online-shop on React + Redux](https://kulychok.github.io/alvarium-soft-test/).
 
 # Task:
 1. Layout of cards, filtering and sorting panel. An approximate view of the page is attached, you can show your imagination. (done)

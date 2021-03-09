@@ -24,8 +24,8 @@ products.products.map((el) => {
 products.products.sort((a, b) => a.price - b.price);
 
 const initialState = {
-	products,
-	filteredProducts: [],
+	productsStore: [...products.products],
+	filteredProducts: [...products.products],
 	newProduct: {
 		name: '',
 		price: 0,
@@ -40,7 +40,8 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
 	const stateCopy = {
 		...state,
-		products: { ...state.products, products: [...state.products.products] },
+		productsStore: [...state.productsStore],
+		filteredProducts: [...state.filteredProducts],
 		newProduct: { ...state.newProduct },
 		currentPrice: { ...state.currentPrice },
 	};
@@ -49,6 +50,19 @@ export const reducer = (state = initialState, action) => {
 		case UPDATE_PRICE:
 			{
 				stateCopy.currentPrice = { min: action.min, max: action.max };
+				let temp = [];
+				if (action.max) {
+					temp = stateCopy.productsStore.filter(
+						(el) =>
+							el.price >= stateCopy.currentPrice.min &&
+							el.price <= stateCopy.currentPrice.max
+					);
+				} else
+					temp = stateCopy.productsStore.filter(
+						(el) => el.price >= stateCopy.currentPrice.min
+					);
+
+				stateCopy.filteredProducts = [...temp];
 			}
 			break;
 		case CHOOSE_CURRENCY:
@@ -61,17 +75,17 @@ export const reducer = (state = initialState, action) => {
 				stateCopy.sortingMethod = action.sortingMethod;
 				switch (stateCopy.sortingMethod) {
 					case 'sortPriceUp':
-						stateCopy.products.products.sort(
+						stateCopy.filteredProducts.sort(
 							(a, b) => a.price - b.price
 						);
 						break;
 					case 'sortPriceDown':
-						stateCopy.products.products.sort(
+						stateCopy.filteredProducts.sort(
 							(a, b) => b.price - a.price
 						);
 						break;
 					case 'sortAlphabet':
-						stateCopy.products.products.sort((a, b) => {
+						stateCopy.filteredProducts.sort((a, b) => {
 							let nameA = a.name.toLowerCase(),
 								nameB = b.name.toLowerCase();
 							if (nameA < nameB) return -1;
@@ -84,7 +98,7 @@ export const reducer = (state = initialState, action) => {
 		case ADD_PRODUCT:
 			{
 				stateCopy.newProduct = {
-					id: state.products.length,
+					id: state.productsStore.length,
 					name: action.name,
 					price: action.price,
 					description: action.description,

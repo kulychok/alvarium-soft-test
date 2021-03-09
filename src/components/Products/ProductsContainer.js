@@ -4,7 +4,7 @@ import './Products.css';
 
 const mapStateToProps = (state) => {
 	return {
-		products: state.data.products.products,
+		products: state.data.filteredProducts,
 		currency: state.data.currentCurrency,
 	};
 };
